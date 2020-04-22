@@ -62,7 +62,7 @@
 
         <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" Grid.Row="4" Grid.Column="1">
             <Button IsDefault="True" Click="Accept_Click" MinWidth="60" Margin="5">OK</Button>
-            <Button IsCancel="True" MinWidth="60" Margin="5">Отмена</Button>
+            <Button IsCancel="True" MinWidth="60" Margin="5">Cancel</Button>
         </StackPanel>
     </Grid>
 </Window>

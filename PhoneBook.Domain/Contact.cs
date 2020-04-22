@@ -7,17 +7,41 @@ using System.Threading.Tasks;
 
 namespace PhoneBook
 {
-    public class Contact : IDataErrorInfo
+    public class Contact : IDataErrorInfo, INotifyPropertyChanged
     {
+        private string _name;
+        private string _surname;
+        private string _email;
+        private long? _number;
         public int Id { get; set; }
 
-        public string Name { get; set; }
+        public string Name
+        {
+            get { return _name; }
+            set { _name = value; NotifyPropertyChanged("Name"); }
+        }
 
-        public string Surname { get; set; }
 
-        public long? Number { get; set; }
+        public string Surname
+        {
+            get { return _surname; }
+            set { _surname = value; NotifyPropertyChanged("Surname"); }
+        }
 
-        public string Email { get; set; }
+
+        public long? Number
+        {
+            get { return _number; }
+            set { _number = value; NotifyPropertyChanged("Number"); }
+        }
+
+
+        public string Email
+        {
+            get { return _email; }
+            set { _email = value; NotifyPropertyChanged("Email"); }
+        }
+
 
         public string Error => "Error occured";
 
@@ -43,9 +67,9 @@ namespace PhoneBook
 
                         break;
                     case "Number":
-                        if (Number == null || Number.ToString().Length != 7)
+                        if (Number == null)
                         {
-                            error = "Number should be 7 numbers long";
+                            error = "Number can not be empty";
                         }
 
                         break;
@@ -59,6 +83,17 @@ namespace PhoneBook
                 }
 
                 return error;
+            }
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        private void NotifyPropertyChanged(string property)
+        {
+            if (PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(property));
+                PropertyChanged(this, new PropertyChangedEventArgs("DisplayMember"));
             }
         }
     }

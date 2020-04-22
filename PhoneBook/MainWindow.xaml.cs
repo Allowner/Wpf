@@ -22,10 +22,26 @@ namespace PhoneBook
     /// </summary>
     public partial class MainWindow : Window
     {
+        Func<Contact, Contact> showContactWindow = (contact) => GetNewContact(contact);
+        Action<string, string> showFindWindow = (title, message) => MessageBox.Show(message, title,
+                          MessageBoxButton.OK, MessageBoxImage.Information);
         public MainWindow(IRepository<Contact> repository)
         {
             InitializeComponent();
-            this.DataContext = new ApplicationViewModel(repository);
+            this.DataContext = new ApplicationViewModel(repository, showContactWindow, showFindWindow);
+        }
+
+        private static Contact GetNewContact (Contact contact)
+        {
+            var window = new ContactWindow(contact);
+            if (window.ShowDialog() == true)
+            {
+                return window.Contact;
+            }
+            else
+            {
+                return null;
+            }
         }
     }
 }

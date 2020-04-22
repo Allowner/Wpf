@@ -15,6 +15,7 @@
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel>
+                        <Separator></Separator>
                         <TextBlock Text="{Binding StringFormat=Name: {0}, Path=Name}" FontSize="16" />
                         <TextBlock Text="{Binding StringFormat=Surname: {0}, Path=Surname}" FontSize="16" />
                         <TextBlock Text="{Binding StringFormat=Number: {0}, Path=Number}" FontSize="16" />

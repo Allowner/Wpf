@@ -1,0 +1,16 @@
+C:\Users\asus\source\repos\PhoneBook\PhoneBook.Infrastructure\bin\Debug\PhoneBook.Infrastructure.dll.config
+C:\Users\asus\source\repos\PhoneBook\PhoneBook.Infrastructure\bin\Debug\PhoneBook.Infrastructure.dll
+C:\Users\asus\source\repos\PhoneBook\PhoneBook.Infrastructure\bin\Debug\PhoneBook.Infrastructure.pdb
+C:\Users\asus\source\repos\PhoneBook\PhoneBook.Infrastructure\bin\Debug\EntityFramework.dll
+C:\Users\asus\source\repos\PhoneBook\PhoneBook.Infrastructure\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\asus\source\repos\PhoneBook\PhoneBook.Infrastructure\bin\Debug\Ninject.dll
+C:\Users\asus\source\repos\PhoneBook\PhoneBook.Infrastructure\bin\Debug\PhoneBook.Domain.dll
+C:\Users\asus\source\repos\PhoneBook\PhoneBook.Infrastructure\bin\Debug\PhoneBook.Domain.pdb
+C:\Users\asus\source\repos\PhoneBook\PhoneBook.Infrastructure\bin\Debug\PhoneBook.Domain.dll.config
+C:\Users\asus\source\repos\PhoneBook\PhoneBook.Infrastructure\bin\Debug\EntityFramework.xml
+C:\Users\asus\source\repos\PhoneBook\PhoneBook.Infrastructure\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\asus\source\repos\PhoneBook\PhoneBook.Infrastructure\bin\Debug\Ninject.xml
+C:\Users\asus\source\repos\PhoneBook\PhoneBook.Infrastructure\obj\Debug\PhoneBook.Infrastructure.csprojAssemblyReference.cache
+C:\Users\asus\source\repos\PhoneBook\PhoneBook.Infrastructure\obj\Debug\PhoneBook.Infrastructure.csproj.CopyComplete
+C:\Users\asus\source\repos\PhoneBook\PhoneBook.Infrastructure\obj\Debug\PhoneBook.Infrastructure.dll
+C:\Users\asus\source\repos\PhoneBook\PhoneBook.Infrastructure\obj\Debug\PhoneBook.Infrastructure.pdb
