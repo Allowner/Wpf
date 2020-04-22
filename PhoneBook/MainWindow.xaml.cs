@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PhoneBook.Infrastructure;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -21,10 +22,10 @@ namespace PhoneBook
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
+        public MainWindow(IRepository<Contact> repository)
         {
             InitializeComponent();
-            this.DataContext = new ApplicationViewModel();
+            this.DataContext = new ApplicationViewModel(repository);
         }
     }
 }

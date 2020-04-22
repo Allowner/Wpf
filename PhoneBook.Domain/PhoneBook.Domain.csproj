@@ -64,6 +64,8 @@
     <Compile Include="Command.cs" />
     <Compile Include="Contact.cs" />
     <Compile Include="ContactsContext.cs" />
+    <Compile Include="IContactDialog.cs" />
+    <Compile Include="IRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
